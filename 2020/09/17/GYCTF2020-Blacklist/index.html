@@ -50,13 +50,13 @@
   };
 </script>
 
-  <meta name="description" content="1.先随便试试看看11&amp;apos; union select 1,2 # 这里看到过滤了很多的关键字（包括rename关键字） 2.再试试堆叠注入11&amp;apos;;show databases;# 发现还是能用用的，继续下去： 11&amp;apos;;show tables;#  11&amp;apos;;show columns from `FlagHere`;#  3.做到这里我就做不下去了，就去查了下别人的wp转自其他博客：这里使用mysql">
+  <meta name="description" content="题目：">
 <meta name="keywords" content="buuctf,sql注入">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[GYCTF2020]Blacklist（sql注入）">
 <meta property="og:url" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;2020&#x2F;09&#x2F;17&#x2F;GYCTF2020-Blacklist&#x2F;index.html">
 <meta property="og:site_name" content="N1ng的菜鸡博客">
-<meta property="og:description" content="1.先随便试试看看11&amp;apos; union select 1,2 # 这里看到过滤了很多的关键字（包括rename关键字） 2.再试试堆叠注入11&amp;apos;;show databases;# 发现还是能用用的，继续下去： 11&amp;apos;;show tables;#  11&amp;apos;;show columns from `FlagHere`;#  3.做到这里我就做不下去了，就去查了下别人的wp转自其他博客：这里使用mysql">
+<meta property="og:description" content="题目：">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;images&#x2F;buuctf&#x2F;blacklist&#x2F;1.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;images&#x2F;buuctf&#x2F;blacklist&#x2F;2.png">
@@ -64,7 +64,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;images&#x2F;buuctf&#x2F;blacklist&#x2F;4.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;images&#x2F;buuctf&#x2F;blacklist&#x2F;5.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;images&#x2F;buuctf&#x2F;blacklist&#x2F;6.png">
-<meta property="og:updated_time" content="2020-09-17T14:45:46.700Z">
+<meta property="og:updated_time" content="2020-09-18T02:28:06.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;tyn781214.github.io&#x2F;images&#x2F;buuctf&#x2F;blacklist&#x2F;1.png">
 
@@ -210,15 +210,22 @@
         </h1>
 
         <div class="post-meta">
+          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-17 22:18:00 / 修改时间：22:45:46" itemprop="dateCreated datePublished" datetime="2020-09-17T22:18:00+08:00">2020-09-17</time>
+              <time title="创建时间：2020-09-17 22:18:00" itemprop="dateCreated datePublished" datetime="2020-09-17T22:18:00+08:00">2020-09-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-18 10:28:06" itemprop="dateModified" datetime="2020-09-18T10:28:06+08:00">2020-09-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -248,7 +255,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="/images/buuctf/blacklist/1.png" alt=""></p>
+        <p>题目：<br><img src="/images/buuctf/blacklist/1.png" alt=""></p>
+<a id="more"></a>
 <h2 id="1-先随便试试看看"><a href="#1-先随便试试看看" class="headerlink" title="1.先随便试试看看"></a>1.先随便试试看看</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">' union select 1,2 #</span></span><br></pre></td></tr></table></figure>
 <p><img src="/images/buuctf/blacklist/2.png" alt=""><br>这里看到过滤了很多的关键字（包括rename关键字）</p>
 <h2 id="2-再试试堆叠注入"><a href="#2-再试试堆叠注入" class="headerlink" title="2.再试试堆叠注入"></a>2.再试试堆叠注入</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">';show databases;#</span></span><br></pre></td></tr></table></figure>
@@ -465,5 +473,5 @@
   })(document, 'script');
 </script>
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
